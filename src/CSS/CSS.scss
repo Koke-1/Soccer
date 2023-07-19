@@ -1,0 +1,47 @@
+
+@mixin Flex($flexdirection,$wrap,$justify,$align){
+    display: flex;
+    flex-flow: $flexdirection $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    #root{
+        @include Flex(row,wrap,center,center);
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.Controls{
+    @include Flex(row,wrap,space-evenly,center);
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    .Left{
+        height: 50%;
+        width: 10%;
+    }
+    .Center{
+        height: 50%;
+        width: 10%;
+        align-self: flex-start  ;
+    }
+    .Right{
+        height: 50%;
+        width: 10%;
+    }
+    .Reset{
+        height: 50%;
+        width: 10%;
+    }
+}
