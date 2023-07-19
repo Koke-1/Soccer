@@ -6,7 +6,7 @@ export default defineConfig({
   base: `/Soccer/`,
   plugins: [react()],
   build:{
-    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg', '**/*.ico', '**/*.glb']
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg', '**/*.ico', '**/*.glb','**/*.gltf']
   }
   
 })
