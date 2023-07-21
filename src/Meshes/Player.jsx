@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 import { useSpring,animated} from "@react-spring/three"
 import {Shoot} from "../App"
 export default function Model({props}) {
-  const { nodes, materials } = useGLTF("/Player.glb")
+  const { nodes, materials } = useGLTF("../public/Player.glb")
   const [PlayerA, setPlayerA] = useState(true)
   const Player = useRef()
 

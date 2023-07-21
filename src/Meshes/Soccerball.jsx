@@ -4,7 +4,7 @@ import { useSpring,animated} from "@react-spring/three";
 import { useGLTF } from "@react-three/drei";
 import {Shoot} from "../App"
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/SoccerBall.glb");
+  const { nodes, materials } = useGLTF("../public/SoccerBall.glb");
   const [BallL, setBallL] = useState(false)
   const [BallC, setBallC] = useState(false)
   const [BallR, setBallR] = useState(false)
@@ -58,3 +58,4 @@ export default function Model(props) {
   );
 }
 
+useGLTF.preload("/SoccerBall.glb");
