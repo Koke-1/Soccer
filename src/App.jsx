@@ -33,6 +33,7 @@
         onRest: () => {
           if (animationStarted.current && animationFinished.current) {
             AllButtons.current.style.opacity = 1
+            console.log("Hello");
           }
           animationFinished.current = true;
         },});   
