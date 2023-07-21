@@ -8,7 +8,7 @@ import {useSpring,animated,config} from "@react-spring/three"
 import {Shoot} from "../App"
 
 export default function Model({props}) {
-  const { nodes, materials } = useGLTF("../public/Player.glb")
+  const { nodes, materials } = useGLTF("/Soccer/Player.glb")
   const [Zero, setZero] = useState(false)
   const [One, setOne] = useState(false)
   const [Two, setTwo] = useState(false)
