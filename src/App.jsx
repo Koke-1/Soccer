@@ -21,7 +21,7 @@
 
       const { rotationC, positionC } = useSpring({
         from: { rotationC:[0, 1, 0] , 
-                positionC:[5, -1, 0]},
+                positionC:[5,-1, 0]},
         to: [{ rotationC: [0,1.9,0], 
               positionC:[-3.25, -2, -7]},],
         config: {
@@ -29,11 +29,12 @@
         },
         onStart: () => {
           animationStarted.current = true;
+          console.log("Hello,OnStart");
         },
         onRest: () => {
           if (animationStarted.current && animationFinished.current) {
             AllButtons.current.style.opacity = 1
-            console.log("Hello");
+            console.log("Hello,OnRest");
           }
           animationFinished.current = true;
         },});   

@@ -12,6 +12,7 @@ export default function Model({props}) {
   const Player = useRef()
 
   const {setLeft,setCenter,setRight,Left,Center,Right,AllButtons} = useContext(Shoot)
+  
 
   useEffect(() => {
     if (Left || Center || Right) {
@@ -81,9 +82,6 @@ export default function Model({props}) {
       config:{
         duration:1000,
       },
-      onRest:()=>{
-        
-      }
   })
   
   return (
