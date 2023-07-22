@@ -4,12 +4,12 @@
   import {useGLTF } from '@react-three/drei'
   import Player from "./Meshes/Player"
   import GK from "./Meshes/GK"
-  import Soccerball from "./Meshes/Soccerball"
+  import SoccerBall from "./Meshes/SoccerBall"
   import "./CSS/CSS.css"
 
   export const Shoot = createContext()
   function App() {
-      const Stadium = useGLTF("SoccerPitch.glb")
+      const Stadium = useGLTF("/Soccer/SoccerPitch.glb")
       const [Left, setLeft] = useState(false)
       const [Right, setRight] = useState(false)
       const [Center, setCenter] = useState(false)
@@ -59,7 +59,7 @@
         <animated.perspectiveCamera position={positionC} rotation={rotationC} >
         <Player />
         <GK/>
-        <Soccerball/>
+        <SoccerBall/>
         <primitive object={Stadium.scene} />
         <ambientLight />
         <pointLight intensity={.2} />
