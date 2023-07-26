@@ -3,8 +3,8 @@
   import { animated, useSpring, useSpringRef } from '@react-spring/three'
   import { animated as Move } from 'react-spring'
   import {useGLTF } from '@react-three/drei'
-  import Player from "./Meshes/Player"
-  import GK from "./Meshes/GK"
+  import Player from "./Meshes/Players"
+  import GK from "./Meshes/GKs"
   import SoccerBall from "./Meshes/SoccerBall"
   import "./CSS/CSS.css"
 
